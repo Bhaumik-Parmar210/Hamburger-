@@ -1,0 +1,41 @@
+body{
+margin:0;
+font-family:Arial;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px 20px;
+background:#f2f2f2;
+}
+
+.menu-btn{
+background:none;
+border:none;
+font-size:25px;
+position:relative;
+}
+
+.menu{
+position:absolute;
+top:40px;
+right:0;
+background:black;
+color:white;
+width:200px;
+display:none;
+flex-direction:column;
+padding:20px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+margin:10px 0;
+}
+
+.menu-btn:focus .menu{
+display:flex;
+}
